@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { colors: { 'tertiary': '#006242', 'on-primary-fixed': '#00174b', 'on-tertiary-fixed': '#002113', 'on-secondary-fixed': '#131b2e', 'on-secondary-container': '#5c647a', 'secondary-fixed': '#dae2fd', 'tertiary-fixed': '#6ffbbe', 'on-tertiary-container': '#bdffdb', 'surface-container': '#e5eeff', 'tertiary-container': '#007d55', 'on-background': '#0b1c30', 'error-container': '#ffdad6', 'background': '#f8f9ff', 'surface-container-highest': '#d3e4fe', 'surface': '#f8f9ff', 'secondary-fixed-dim': '#bec6e0', 'on-primary': '#ffffff', 'surface-tint': '#0053db', 'on-error': '#ffffff', 'outline-variant': '#c3c6d7', 'surface-container-high': '#dce9ff', 'primary-fixed-dim': '#b4c5ff', 'on-surface-variant': '#434655', 'surface-dim': '#cbdbf5', 'inverse-primary': '#b4c5ff', 'on-primary-fixed-variant': '#003ea8', 'on-tertiary-fixed-variant': '#005236', 'surface-variant': '#d3e4fe', 'tertiary-fixed-dim': '#4edea3', 'primary-fixed': '#dbe1ff', 'on-secondary': '#ffffff', 'on-tertiary': '#ffffff', 'error': '#ba1a1a', 'surface-container-low': '#eff4ff', 'on-surface': '#0b1c30', 'inverse-on-surface': '#eaf1ff', 'primary-container': '#2563eb', 'surface-bright': '#f8f9ff', 'secondary': '#565e74', 'on-primary-container': '#eeefff', 'surface-container-lowest': '#ffffff', 'on-secondary-fixed-variant': '#3f465c', 'on-error-container': '#93000a', 'inverse-surface': '#213145', 'primary': '#004ac6', 'secondary-container': '#dae2fd', 'outline': '#737686' }, borderRadius: { 'DEFAULT': '0.25rem', 'lg': '0.5rem', 'xl': '0.75rem', 'full': '9999px' }, spacing: { 'space-xl': '2rem', 'gutter': '1rem', 'space-sm': '0.5rem', 'space-xs': '0.25rem', 'space-md': '1rem', 'margin': '1rem', 'space-lg': '1.5rem' }, fontFamily: { 'label-md': ['Inter'], 'headline-lg': ['Inter'], 'body-sm': ['Inter'], 'headline-xl': ['Inter'], 'title-md': ['Inter'], 'label-sm': ['Inter'], 'body-md': ['Inter'], 'label-lg': ['Inter'], 'body-lg': ['Inter'], 'headline-xl-mobile': ['Inter'], 'headline-md': ['Inter'] }, fontSize: { 'label-md': ['12px', { lineHeight: '16px', fontWeight: '500' }], 'headline-lg': ['24px', { lineHeight: '32px', fontWeight: '600' }], 'body-sm': ['12px', { lineHeight: '16px', fontWeight: '400' }], 'headline-xl': ['32px', { lineHeight: '40px', fontWeight: '700' }], 'title-md': ['16px', { lineHeight: '24px', fontWeight: '600' }], 'label-sm': ['11px', { lineHeight: '14px', fontWeight: '600' }], 'body-md': ['14px', { lineHeight: '20px', fontWeight: '400' }], 'label-lg': ['14px', { lineHeight: '20px', fontWeight: '600' }], 'body-lg': ['16px', { lineHeight: '24px', fontWeight: '400' }], 'headline-xl-mobile': ['26px', { lineHeight: '34px', fontWeight: '700' }], 'headline-md': ['20px', { lineHeight: '28px', fontWeight: '600' }] } } } }</script><style>@layer base { html, body { width: 100vw; margin: 0; padding: 0; } body { overscroll-behavior: none; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-background font-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-6 px-margin flex items-center justify-between text-on-surface"><span class="font-label-sm text-label-sm font-semibold tracking-tight">09:41</span><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[14px]">signal_cellular_alt</span><span class="material-symbols-outlined text-[14px]">wifi</span><span class="material-symbols-outlined text-[14px]">battery_full</span></div></div><div class="h-16 px-space-sm flex items-center justify-between"><div class="flex items-center gap-space-xs"><button class="w-11 h-11 flex items-center justify-center rounded-full hover:bg-surface-container-high transition-colors text-on-surface" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><h1 class="font-title-md text-title-md font-semibold text-on-surface tracking-tight truncate max-w-[210px]">Detail Tiket Reparasi</h1></div><div class="flex items-center gap-space-sm"><button class="w-11 h-11 flex items-center justify-center rounded-full hover:bg-surface-container-high transition-colors text-on-surface-variant"><span class="material-symbols-outlined text-[22px]">more_vert</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 w-full bg-surface pt-[88px] pb-safe px-margin"><div class="flex flex-col w-full pb-8">
+<div class="flex flex-col gap-4">
+<!-- Status Hero Banner -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-high p-4 shadow-sm">
+<div class="flex items-center justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="flex h-2.5 w-2.5 relative">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary"></span>
+</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary">Status Operasional</span>
+</div>
+<span class="inline-flex items-center gap-1.5 rounded-full bg-secondary-fixed px-3 py-1 font-label-sm text-label-sm text-on-secondary-fixed">
+<span class="h-2 w-2 rounded-full bg-primary"></span>
+          Teknisi Menuju Lokasi
+        </span>
+</div>
+<div class="mt-3 flex items-baseline justify-between">
+<div>
+<span class="font-label-md text-label-md text-on-surface-variant">Nomor Perintah Kerja</span>
+<h2 class="font-title-md text-title-md text-on-surface">#INV-20250514-0042</h2>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Estimasi Tiba</span>
+<p class="font-label-lg text-label-lg text-primary">~14 Menit</p>
+</div>
+</div>
+</div>
+<!-- Customer Card -->
+<div class="rounded-xl bg-surface-container-lowest p-4 shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="flex h-11 w-11 items-center justify-center rounded-full bg-surface-container-high text-primary">
+<span class="material-symbols-outlined text-[24px]">person</span>
+</div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface leading-snug">Ibu Ratna Dewi</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">+62 812-9844-xxxx</p>
+</div>
+</div>
+<span class="rounded-full bg-surface-container px-2.5 py-1 font-label-sm text-label-sm text-on-surface-variant">Prioritas Pagi</span>
+</div>
+<div class="rounded-lg bg-surface-container-low p-3 flex gap-2.5 items-start">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5 shrink-0">pin_drop</span>
+<div class="min-w-0">
+<p class="font-label-sm text-label-sm text-on-surface-variant">Alamat Pengerjaan</p>
+<p class="font-body-md text-body-md text-on-surface leading-tight mt-0.5">
+            Jl. Flamboyan Indah No. 12, Kel. Sukamaju, Kec. Cilodong, Depok
+          </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Patokan: Pagar hitam depan pos satpam blok B</p>
+</div>
+</div>
+<!-- Quick Action Buttons -->
+<div class="grid grid-cols-2 gap-2.5 pt-1">
+<a class="flex h-12 items-center justify-center gap-2 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg shadow-sm active:scale-95 transition-transform" href="https://maps.google.com" target="_blank">
+<span class="material-symbols-outlined text-[20px]">directions</span>
+<span>Buka Maps</span>
+</a>
+<a class="flex h-12 items-center justify-center gap-2 rounded-xl bg-tertiary-container text-on-tertiary-container font-label-lg text-label-lg shadow-sm active:scale-95 transition-transform" href="https://wa.me/6281298440000" target="_blank">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span>WhatsApp</span>
+</a>
+</div>
+</div>
+<!-- Mini Route Preview Map -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container shadow-sm">
+<div class="h-32 w-full bg-cover bg-center" data-location="Jl. Flamboyan Indah No. 12, Cilodong, Depok, Indonesia" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDFPsI33Y_1qRUFv0CG9K5etyBFRoZO_yKg0yP0Gc6qyyaSCPIdotaePNmYkWHzZ5BTv5lA-RfRtl8ivRn5WYIi7eUcJakPD-FCbbiR_C3vEvkr0PDPAjdfv4LU2tz4HCF-2d_ABSIao8j5LSGrbxJNq3eWPrMzQCbEapT6IaHReb8pG7ylnKf3AvFOue40Q86fGtQTI0u4gNRceEKZqN19zLR8a3nO70BAKeb6lAQ')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/70 via-transparent to-transparent flex items-end p-3">
+<div class="flex items-center justify-between w-full text-on-primary">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">near_me</span>
+<span class="font-label-sm text-label-sm">Depok Sektor Cilodong (3.2 km)</span>
+</div>
+<span class="font-label-sm text-label-sm bg-primary/80 backdrop-blur-sm px-2 py-0.5 rounded-full">Lalu lintas lancar</span>
+</div>
+</div>
+</div>
+<!-- Device Specification & Customer Complaint -->
+<div class="rounded-xl bg-surface-container-lowest p-4 shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">local_laundry_service</span>
+<span class="font-title-md text-title-md text-on-surface">Detail Perangkat</span>
+</div>
+<span class="font-label-sm text-label-sm rounded-full bg-surface-container-high px-2 py-0.5 text-on-surface-variant">Garansi Toko</span>
+</div>
+<div class="rounded-lg bg-surface-container-low p-3">
+<p class="font-label-sm text-label-sm text-on-surface-variant">Model Unit</p>
+<p class="font-headline-md text-headline-md text-on-surface font-semibold">Mesin Cuci Samsung EcoBubble 8.5kg</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">SN: WW85T4040CX-2023-ID</p>
+</div>
+<div class="rounded-lg bg-error-container/40 p-3 flex flex-col gap-1">
+<div class="flex items-center gap-1.5 text-error">
+<span class="material-symbols-outlined text-[18px]">error</span>
+<span class="font-label-sm text-label-sm font-semibold">Keluhan Pelanggan:</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic">
+          "Air tidak mau keluar dari selang pembuangan, error kode 4E di layar digital saat siklus spin."
+        </p>
+</div>
+<!-- Customer Attached Photos -->
+<div class="flex flex-col gap-2 mt-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Foto Bukti Kerusakan (3 Foto)</span>
+<span class="font-label-sm text-label-sm text-primary">Klik untuk perbesar</span>
+</div>
+<div class="grid grid-cols-3 gap-2">
+<div class="group relative overflow-hidden rounded-lg aspect-square bg-surface-container">
+<img class="h-full w-full object-cover transition-transform group-hover:scale-105" data-alt="Close up photograph of digital washing machine error display showing code 4E illuminated in bright blue LEDs on sleek grey metallic panel with water droplets, ultra sharp repair snapshot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASW0C4lq9U2B8UGUAxwqige9P5FkhCiB_LYEfFAfb0Fb5F0rq3OKpS0ZzD2ZSbknbMtWoncwMs_BqhbFdh-gtG69JqldU8-ulb7_Df1D6QHcLfDBnX1KI-iqFf1i5jyMBChrmYLakpx3stEyhoZ3tUnT5P8okkCa_hN-xpbdJ3fk-a7gRuXjfUOU7PnjzWKArkCcS6HzpubrBS6-r9Vsqb3ME3f5GHNyzIOj6KQWQ"/>
+<div class="absolute bottom-1 right-1 rounded bg-inverse-surface/80 px-1 py-0.5 text-[10px] text-inverse-on-surface font-label-sm">Display</div>
+</div>
+<div class="group relative overflow-hidden rounded-lg aspect-square bg-surface-container">
+<img class="h-full w-full object-cover transition-transform group-hover:scale-105" data-alt="Front photograph of Samsung front-loading EcoBubble washing machine installed in tiled Indonesian laundry room interior, clear lighting showing full drum and water hose layout" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIhiVsxwZ3Is1l2DOhLYlyqh_kWvCjOgoEq7z_NObAbppn517BUMN2AkHqjTfPzDgCkUJ54H0G-EzBlRC9rPpTz15vorrXIN6R36MZhkadqgF37Ky9ReXsyMGYPKCw20GmoMjNUpvQZRE8SgTLLXtkgHjppwmaos_iQMDOwlkvZ8ZCoe3HYurDZxxr2DWBr9bdRzYFdlIqTea8kSD67OPxzb0tYVo_ri2GzqRm1EQ"/>
+<div class="absolute bottom-1 right-1 rounded bg-inverse-surface/80 px-1 py-0.5 text-[10px] text-inverse-on-surface font-label-sm">Fasad</div>
+</div>
+<div class="group relative overflow-hidden rounded-lg aspect-square bg-surface-container">
+<img class="h-full w-full object-cover transition-transform group-hover:scale-105" data-alt="Detailed macro photo of back drainage drain pipe on washing machine jammed with lint and sediment, high contrast technician inspection perspective" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOPBYuqx2f7EzbF1MxOVXmJg1PZ6L3Onp4H1w5hmiAw6MiWHjA3V7YcK4xVQWRnFJD6e6NUUtOwooYe6gXlUCAqdtCCkyXXNa4pbCzwApmFgs1zB0lkNEOmhIVSk2FRUUN2gCsT7rUqwd4wzHFhs259Ka2FJ1R2rBbbDdOPb_C_eGoqSavSSiYtXgrho4UXz56nYJHFNHeq2wCF6Z4u1bMvb6s-qzINyzfsf26ZGI"/>
+<div class="absolute bottom-1 right-1 rounded bg-inverse-surface/80 px-1 py-0.5 text-[10px] text-inverse-on-surface font-label-sm">Selang</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Official State Machine Control Section -->
+<div class="rounded-xl bg-surface-container-lowest p-4 shadow-sm flex flex-col gap-4">
+<div class="flex items-center justify-between border-b border-surface-container pb-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">sync_alt</span>
+<h3 class="font-title-md text-title-md text-on-surface">Pembaruan Status Reparasi</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Step 2 dari 5</span>
+</div>
+<!-- State Transition Selector -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface flex items-center justify-between">
+<span>Transisi Status Berikutnya yang Sah:</span>
+<span class="text-tertiary font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+            SOP Terkunci
+          </span>
+</label>
+<div class="relative">
+<select class="w-full h-12 appearance-none rounded-xl bg-surface-container-low px-3.5 pr-10 font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container" id="stateSelect">
+<option selected="" value="DIAGNOSIS">Opsi 1: Tiba di Lokasi &amp; Mulai Diagnosa (DIAGNOSIS)</option>
+</select>
+<div class="pointer-events-none absolute right-3.5 top-1/2 -translate-y-1/2 text-on-surface-variant flex items-center">
+<span class="material-symbols-outlined text-[20px]">unfold_more</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Status saat ini: <strong class="text-on-surface">Teknisi Menuju Lokasi</strong>. Sesuai alur, Anda wajib menandai kedatangan sebelum pembongkaran.
+        </p>
+</div>
+<!-- Technician Notes Form -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface flex justify-between items-center" for="techNotes">
+<span>Catatan Temuan Lapangan &amp; Komponen</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Wajib diisi</span>
+</label>
+<textarea class="w-full rounded-xl bg-surface-container-low p-3 font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container resize-none placeholder:text-on-surface-variant/60" id="techNotes" placeholder="Hasil pengecekan awal teknisi, temuan kerusakan, voltase sumber daya, atau nomor seri komponen pengganti..." rows="3"></textarea>
+</div>
+<!-- File / Camera Evidence Upload Section -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Upload Foto Bukti Servis</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Maks 3 file (Opsional)</span>
+</div>
+<div class="grid grid-cols-3 gap-2">
+<!-- Add photo trigger button -->
+<button class="aspect-square rounded-lg bg-surface-container-low hover:bg-surface-container flex flex-col items-center justify-center gap-1 text-primary transition-colors" onclick="document.getElementById('fileInput').click()" type="button">
+<span class="material-symbols-outlined text-[24px]">add_a_photo</span>
+<span class="font-label-sm text-label-sm text-center leading-none">Ambil Foto</span>
+</button>
+<input accept="image/*" capture="environment" class="hidden" id="fileInput" onchange="handleImagePreview(event)" type="file"/>
+<!-- Preview Slot 1 -->
+<div class="relative aspect-square rounded-lg bg-surface-container overflow-hidden hidden" id="previewSlot1">
+<img class="h-full w-full object-cover" data-alt="Technician holding digital multimeter probe testing the drain pump solenoid motor of a dismantled Samsung washing machine" id="imgPreview1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQerwj8W3VehcEHtjtTlNhPs4D6TQJbsU-VO_FeLZxKun5K5EnIDLmIJfcMCrfHjMYy3-sXuxZMLc63KJmL9gTkol59uXNH3bhe6sAFW0uzGWAdmkxwPrgzo6kute-MXQzVT35w0j6MnyiRCTc7PtJd-PgD0bLk5bUtGbErlycMAHKblSPACR09OsSeMhlzJI5SOvUy5gDXBTJJ2xb403_iVv4dO4TybwHav7PfJo"/>
+<button class="absolute top-1 right-1 bg-on-background/70 text-on-primary rounded-full p-0.5" onclick="removePreview(1)" type="button">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+</div>
+<!-- Preview Slot 2 Placeholder UI -->
+<div class="aspect-square rounded-lg bg-surface-container-low flex flex-col items-center justify-center text-on-surface-variant/40">
+<span class="material-symbols-outlined text-[20px]">image</span>
+<span class="font-label-sm text-label-sm text-center text-[10px]">Slot Bukti #2</span>
+</div>
+</div>
+</div>
+<!-- Backend Warning Notification -->
+<div class="rounded-xl bg-error-container p-3 flex gap-2.5 items-start">
+<span class="material-symbols-outlined text-on-error-container text-[20px] mt-0.5 shrink-0">warning</span>
+<div class="min-w-0">
+<h4 class="font-label-md text-label-md text-on-error-container font-semibold">Validasi Sistem Laravel Backend</h4>
+<p class="font-body-sm text-body-sm text-on-error-container leading-tight mt-0.5">
+            Perhatian: Transisi status bersifat berurutan dan diverifikasi oleh sistem Laravel backend. Tidak dapat dibatalkan setelah dikonfirmasi.
+          </p>
+</div>
+</div>
+<!-- Action Confirmation Trigger -->
+<div class="flex flex-col gap-2 pt-1">
+<button class="w-full h-12 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-sm active:scale-95 transition-all" id="submitStatusBtn" onclick="confirmStatusUpdate()">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+<span>Simpan Pembaruan Status</span>
+</button>
+<p class="text-center font-body-sm text-body-sm text-on-surface-variant">
+          Notifikasi status otomatis terkirim ke WhatsApp pelanggan &amp; tim dispatcher secara realtime.
+        </p>
+</div>
+</div>
+<!-- Technician Diagnostic Quick Checklist -->
+<div class="rounded-xl bg-surface-container-lowest p-4 shadow-sm flex flex-col gap-2.5">
+<span class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">checklist</span>
+        Checklist Tindakan Standar Unit Air &amp; Pompa
+      </span>
+<div class="flex flex-col gap-2">
+<label class="flex items-center gap-2.5 text-on-surface font-body-sm text-body-sm">
+<input checked="" class="h-4 w-4 rounded text-primary focus:ring-0 accent-primary" type="checkbox"/>
+<span>Konfirmasi voltase stop kontak rumah stabil (210V - 230V)</span>
+</label>
+<label class="flex items-center gap-2.5 text-on-surface font-body-sm text-body-sm">
+<input class="h-4 w-4 rounded text-primary focus:ring-0 accent-primary" type="checkbox"/>
+<span>Periksa saringan debris koin &amp; filter pompa drainase</span>
+</label>
+<label class="flex items-center gap-2.5 text-on-surface font-body-sm text-body-sm">
+<input class="h-4 w-4 rounded text-primary focus:ring-0 accent-primary" type="checkbox"/>
+<span>Tes solenoid valve inlet water resistansi (3.5 - 4.5 kΩ)</span>
+</label>
+</div>
+</div>
+</div>
+<!-- Interactive Feedback Toast -->
+<div class="fixed bottom-6 left-4 right-4 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none" id="statusToast">
+<div class="rounded-xl bg-inverse-surface p-3 text-inverse-on-surface shadow-xl flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary-fixed text-[20px]">check_circle</span>
+<span class="font-label-md text-label-md">Status berhasil diubah ke DIAGNOSIS</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary-fixed">Backend Synced</span>
+</div>
+</div>
+</div>
+<script>
+  function handleImagePreview(event) {
+    const file = event.target.files[0];
+    if (file) {
+      const slot = document.getElementById('previewSlot1');
+      const img = document.getElementById('imgPreview1');
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        img.src = e.target.result;
+        slot.classList.remove('hidden');
+      };
+      reader.readAsDataURL(file);
+    }
+  }
+
+  function removePreview(slotId) {
+    const slot = document.getElementById('previewSlot' + slotId);
+    const input = document.getElementById('fileInput');
+    if (slot) slot.classList.add('hidden');
+    if (input) input.value = '';
+  }
+
+  function confirmStatusUpdate() {
+    const notes = document.getElementById('techNotes').value.trim();
+    const btn = document.getElementById('submitStatusBtn');
+    
+    btn.innerHTML = `<span class="inline-block animate-spin material-symbols-outlined text-[18px]">progress_activity</span> Memproses Sinkronisasi...`;
+    btn.classList.add('opacity-80', 'pointer-events-none');
+
+    setTimeout(() => {
+      btn.innerHTML = `<span class="material-symbols-outlined text-[20px]">done_all</span> Berhasil Diverifikasi`;
+      btn.classList.remove('opacity-80');
+      btn.classList.add('bg-tertiary-container', 'text-on-tertiary-container');
+      
+      const toast = document.getElementById('statusToast');
+      toast.classList.remove('translate-y-24', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-24', 'opacity-0');
+      }, 3500);
+    }, 1200);
+  }
+</script></main></body></html>
